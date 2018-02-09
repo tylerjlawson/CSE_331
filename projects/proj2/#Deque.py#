@@ -4,7 +4,7 @@ Tyler Lawson
 Classes set up as a linked list to be a functional deque 
 """
 
-class Node(object):
+class Node:
     """
     A Node class so that each node in the Deque can easily 
     store its own information: data, next node, and prev node
@@ -187,4 +187,3 @@ class Deque:
         :return: A string
         """
         return 'Deque([{0}])'.format(','.join(str(item) for item in self))
-

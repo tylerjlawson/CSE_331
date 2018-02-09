@@ -43,4 +43,5 @@ def main(infile, outfile):
 	
 if __name__ == '__main__':
 	main('gryffindor.txt', 'sorted.txt')
+	#main('numbers.txt', 'sortedNum.txt')
 	#main('short.txt', 'sorted.txt')

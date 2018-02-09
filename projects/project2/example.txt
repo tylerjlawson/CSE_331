@@ -1,0 +1,33 @@
++f a
+print
+len
++f is
+print
+len
++b fun
+print
+len
++b project
+print
+len
++f this
+print
+len
+-f
+print
+len
+-f
+print
+len
+-b
+print
+len
++f play
+print
+len
++b game
+print
+len
+clear
+print
+len

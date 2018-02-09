@@ -1,0 +1,9 @@
+234 0 <johnson@hogwarts.ed>
+4 2 <weasley@hogwarts.ed>
+0 3 <spinnet@hogwarts.ed>
+9 32 <weasley@hogwarts.ed>
+9 34 <weasley@hogwarts.ed>
+1 5 <potter@hogwarts.ed>
+45 5 <wood@hogwarts.ed>
+2 7 <granger@hogwarts.ed>
+55 9 <weasley@hogwarts.ed>

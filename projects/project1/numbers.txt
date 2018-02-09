@@ -1,0 +1,9 @@
+1 5 hpotter@hogwarts.edu
+2 7 hgranger@hogwarts.edu
+55 9 rweasley@hogwarts.edu
+45 5 owood@hogwarts.edu
+9 32 pweasley@hogwarts.edu
+0 3 aspinnet@hogwarts.edu
+234 0 ajohnson@hogwarts.edu
+4 2 fweasley@hogwarts.edu
+9 34 gweasley@hogwarts.edu

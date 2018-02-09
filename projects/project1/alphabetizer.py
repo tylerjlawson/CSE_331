@@ -14,9 +14,9 @@ def order_first_name(a, b):
 	"""
 	global cost
 	cost+=1
-	if (a.first <= b.first): #compares first names 
-		return True
-	return False
+	if (a.first == b.first): #if same
+		return a.last <= b.last
+	return a.first <= b.first
 	
 def order_last_name(a, b):
 	"""
@@ -27,9 +27,9 @@ def order_last_name(a, b):
 	"""
 	global cost
 	cost=cost+1
-	if (a.last <= b.last): #compares last names
-		return True
-	return False
+	if (a.last == b.last): #if same
+		return a.first <= b.first
+	return a.last <= b.last
 
 def is_alphabetized(roster, ordering):
 	"""
@@ -68,26 +68,7 @@ def merge(roster, ordering, l, mid, r):
 	k = l 
 
 	while i < x and j < y : #goes through all of the smaller lists
-		#first if is for the case of repeat names
-		if ((L[i].first==R[j].first) and (ordering==order_first_name)) or \
-		((L[i].last==R[j].last) and (ordering==order_last_name)):
-			if ((L[i].first==R[j].first) and (ordering==order_first_name)):
-				#when same first name use last name
-				if order_last_name(L[i], R[j]):
-					roster[k] = L[i]
-					i += 1
-				else:
-					roster[k] = R[j]
-					j += 1
-			else:#same last name uise first name
-				if order_first_name(L[i], R[j]):
-					roster[k] = L[i]
-					i += 1
-				else:
-					roster[k] = R[j]
-					j += 1
-		#normal comparison and sorting
-		elif ordering(L[i], R[j]):
+		if ordering(L[i], R[j]):
 			roster[k] = L[i]
 			i += 1
 		else:

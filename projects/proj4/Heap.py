@@ -95,7 +95,7 @@ class Heap:
         reorganizes a heap to be a valid heap
         param an index at which to start reorganizing
         """
-        l = self.left(i)
+        l = self.left(i) # save children
         r = self.right(i)
         if l < len(self.arr) and self.comp(self.arr[l], self.arr[i]):
             small = l 

@@ -164,5 +164,3 @@ def median_help(ele, the_median, maxH, minH):
             minH.insert(ele)
         the_median = minH.peek()
     return the_median
-
-

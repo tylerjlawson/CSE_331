@@ -56,11 +56,12 @@ class HashMapTests(unittest.TestCase):
             hashmap[l] = i
             self.assertEqual(i, hashmap[l])
         for i, l in enumerate(letters):
+
             self.assertEqual(i, hashmap[l])
             hashmap[l] = len(l)
             self.assertEqual(len(l), hashmap[l])
         for l in letters:
-            self.assertEqual(len(l), hashmap[l])
+            self.assertEqual(len(l), hashmap[l])     
             del hashmap[l]
             self.assertRaises(KeyError, hashmap.__getitem__, l)
 

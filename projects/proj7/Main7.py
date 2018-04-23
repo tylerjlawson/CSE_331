@@ -17,9 +17,9 @@ def main(file):
     if not verify_increasing(lis):
         print('Warning: Sequence not increasing!')
 
-
 if __name__ == '__main__':
-    #main('e.txt', 'pi.txt')
-    #main('midsummer.txt', 'muchado.txt')
+    #main('e.txt')
+    #main('pi.txt')
+    main('muchado.txt')
+    #main('midsummer.txt')
     #print(find_lis([0, 8, 4, 12, 2, 10, 6, 14, 1, 9, 5, 13, 3, 11, 7, 15]))
-    main('e.txt')
